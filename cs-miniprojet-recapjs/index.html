@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <title>Récap JS - mini-projet</title>
+</head>
+
+<body>
+
+    <main>
+        <h1 class="bg-primary text-white text-center mt-5">JavaScript DOM</h1>
+        <div class="mt-5">
+            <button class="btn text-primary">Exercice 1</button>
+            <button class="btn text-primary">Exercice 2</button>
+            <button class="btn text-primary">Exercice 3</button>
+            <button class="btn text-primary">Exercice 4</button>
+            <button class="btn text-primary">Exercice 5</button>
+            <button class="btn text-primary">Exercice 6</button>
+        </div>
+    </main>
+
+    <!-- Exercice 1 -->
+    <section id="section1" style="display: none" class="mt-4 bg-secondary">
+        <div class="p-5">
+            <h2>titre à remplacer</h2>
+            <p>list de propriété et méthode à retrouver dans la documentation</p>
+            <ul>
+                <li>innerText</li>
+                <li>innerHTML</li>
+                <li>quarySelector()</li>
+                <li>querySelectorAll()</li>
+                <li>style</li>
+                <li>classList</li>
+            </ul>
+            <p>Changer le contenu du h2 par "le titre modifié</p>
+            <p>changer la couleur du h2 (la couleur que vous voulez</p>
+            <p>Ajoutez une class background bootstrap au h2</p>
+        </div>
+    </section>
+
+    <!-- Exercice 2 -->
+    <section id="section2" style="display: none" class="mt-4 bg-secondary">
+        <div class="p-5">
+            <p>Mettre un écouteur d'événement sur les boutons nav et changer le panel en conséquence</p>
+        </div>
+    </section>
+
+    <!-- Exercice 3 -->
+    <section id="section3" style="display: none" class="mt-4 bg-secondary">
+        <div class="p-5">
+            <h2>Welcome <span>inconnu</span></h2>
+            <p>écrivez dans l'imput ci-dessous le nom de la personne que vous voulez acceuillir</p>
+            <p>lorsque vous cliquez sur le bouton "go" le nom que vous avez ajouter dans l'input sera alors mis dans le
+                span du h2 et l'input sera alors vidé de tout contenu. Attention, interdiction de toucher l'html</p>
+            <input type="text"><button class="btn btn-primary">go</button>
+        </div>
+    </section>
+
+    <!-- Exercice 4 -->
+    <section id="section4" style="display: none" class="mt-4 bg-secondary">
+        <h2 class="pt-5 ps-5">Déplacer les élements</h2>
+        <div class=" carre-blue p-5 pt-0">
+
+            <div class="bg-primary">
+                <div style="display: block" class="carreRouge bg-danger"></div>
+            </div>
+
+            <div class="bg-primary">
+                <div style="display: none" class="carreRouge bg-danger"></div>
+            </div>
+        </div>
+        <div class="button-change">
+            <button class="btn btn-warning">changer place</button>
+            <button class="btn btn-success">nombre de clicks : <span>0</span> </button>
+        </div>
+    </section>
+
+    <!-- Exercice 5 -->
+    <section id="section5" style="display: none" class="mt-4 bg-secondary">
+        <div class="p-5">
+            <div>
+                <h2>Générer des éléments du DOM</h2>
+                <p>Cliquer sur le boutton ci-dessous pour générer des oeufs</p>
+                <button class="btn btn-primary" id="addEggs">Ajouter un oeuf</button>
+                <div id="eggs">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exercice 6 -->
+    <section id="section6" style="display: none" class="mt-4 bg-secondary">
+        <div class="p-5">
+            <div>
+                <h2>Création calculatrice</h2>
+                <h2>Level 1</h2>
+                <div class="calc1">
+                    <input id="input1" type="text">
+                    <p>+</p>
+                    <input id="input2" type="text">
+                    <button class="btn btn-primary ms-1 me-1" id="btnReponse">=</button>
+                    <span class="text-primary bg-dark text-center" style="width: 35px" id="reponseCalc">??</span>
+                </div>
+                <h2>Level 2</h2>
+                <div class="calc2 pb-2">
+                    <div>
+                        <div class="bg-light divEcran text-end">
+                            <span class="ecran"></span>
+                        </div>
+                        <div class="divCalculatrice touches">
+                            <button data-key="97" class=" bouton btn btn-secondary">1</button>
+                            <button data-key="98" class=" bouton btn btn-secondary">2</button>
+                            <button data-key="99" class=" bouton btn btn-secondary">3</button>
+                            <button data-key="107" class=" bouton btn btn-primary">+</button>
+                            <button data-key="100" class=" bouton btn btn-secondary">4</button>
+                            <button data-key="101" class=" bouton btn btn-secondary">5</button>
+                            <button data-key="102" class=" bouton btn btn-secondary">6</button>
+                            <button data-key="109" class=" bouton btn btn-primary">-</button>
+                            <button data-key="103" class=" bouton btn btn-secondary">7</button>
+                            <button data-key="104" class=" bouton btn btn-secondary">8</button>
+                            <button data-key="105" class=" bouton btn btn-secondary">9</button>
+                            <button data-key="106" class=" bouton btn btn-primary">*</button>
+                            <button data-key="8" class=" bouton btn btn-danger">C</button>
+                            <button data-key="96" class=" bouton btn btn-primary">0</button>
+                            <button data-key="13" class=" bouton btn btn-success">=</button>
+                            <button data-key="111" class=" bouton btn btn-primary">/</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+<script src="./public/js/main.js"></script>
+</body>
+
+</html>

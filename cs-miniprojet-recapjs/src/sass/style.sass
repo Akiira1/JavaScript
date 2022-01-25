@@ -1,0 +1,81 @@
+@import './_icone'
+@import './_bootstrap'
+
+
+
+*
+    margin: 0
+
+    main
+        width: 80%
+        margin: auto
+        div
+            margin: auto
+            display: flex
+            justify-content: space-between
+            button
+                border-radius: 0!important
+                width: 15%
+                &:focus
+                    color: white!important
+                    background-color: $primary
+    
+
+    section
+        width: 80%
+        margin: auto
+        .carre-blue
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            div
+                width: 40%
+                height: 150px
+                display: flex
+                justify-content: center
+                align-items: center
+                div
+                    width: 50px
+                    height: 50px
+            div
+                width: 40%
+                height: 150px
+        .button-change
+            display: flex
+            flex-direction: column
+            button
+                margin: auto
+                margin: 5px auto
+
+
+    .calc1
+        display: flex
+        flex-direction: row
+    .calc2
+        width: 300px
+        background-color: black
+        padding-top: 7px
+        border-top-left-radius: 30px
+        border-top-right-radius: 30px
+        div
+            .divCalculatrice
+                display: grid
+                grid-template-columns: repeat(4, 1fr)
+                gap: 10px
+                button
+                    margin: auto
+                    width: 50px
+
+
+.divEcran
+    margin: auto
+    width: 95%
+    height: 100px
+    margin-bottom: 10px
+    background-color: white
+    border-top-left-radius: 25px
+    border-top-right-radius: 25px
+    font-size: 40px
+    font-weight: bolder
+    padding-top: 40px
+    padding-right: 10px
